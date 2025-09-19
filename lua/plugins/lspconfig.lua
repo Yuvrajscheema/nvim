@@ -51,6 +51,44 @@ return {
       }
     }
 
+    vim.lsp.enable('asm_lsp', {
+    })
+
+
+
+    lspconfig.ts_ls.setup {
+      settings = {
+        typescript = {
+          format = {
+            indentSize = 2,
+            convertTabsToSpaces = true,
+          },
+          inlayHints = {
+            includeInlayParameterNameHints = "all",
+            includeInlayVariableTypeHints = true,
+          },
+          suggest = {
+            autoImports = true,
+          },
+          tsserver = {
+            logVerbosity = "off",
+            maxTsServerMemory = 4096,
+          },
+        },
+        javascript = {
+          format = {
+            indentSize = 2,
+            convertTabsToSpaces = true,
+          },
+          inlayHints = {
+            includeInlayParameterNameHints = "all",
+            includeInlayVariableTypeHints = true,
+          },
+        },
+      },
+    }
+
+
 
     -- Lua LS Setup
     lspconfig.lua_ls.setup {
