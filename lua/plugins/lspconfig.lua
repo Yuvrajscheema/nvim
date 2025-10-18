@@ -2,9 +2,9 @@ return {
   "neovim/nvim-lspconfig",
 
   config = function()
-    local lspconfig = require("lspconfig")
+
     -- Clangd Setup
-    lspconfig.clangd.setup {
+    vim.lsp.enable('clang',  {
       cmd = {
         "clangd",
         "--background-index",
@@ -39,9 +39,9 @@ return {
         completeUnimported = true,
         clangdFileStatus = true,
       },
-    }
+    })
 
-    lspconfig.rust_analyzer.setup {
+    vim.lsp.enable('rust_analyzer', {
       settings = {
         ['rust-analyzer'] = {
           diagnostics = {
@@ -50,13 +50,14 @@ return {
         }
       }
     }
+    )
 
     vim.lsp.enable('asm_lsp', {
     })
 
 
 
-    lspconfig.ts_ls.setup {
+     vim.lsp.enable('ts_ls', {
       settings = {
         typescript = {
           format = {
@@ -86,12 +87,13 @@ return {
           },
         },
       },
-    }
+    })
 
+      vim.lsp.enable('tinymist')
 
 
     -- Lua LS Setup
-    lspconfig.lua_ls.setup {
+    vim.lsp.enable('lua_ls', {
       on_init = function(client)
         if client.workspace_folders then
           local path = client.workspace_folders[1].name
@@ -112,15 +114,14 @@ return {
       settings = {
         Lua = {}
       },
-    }
+    })
 
-    -- Pyright Setup for Python
-    lspconfig.pyright.setup {
+    vim.lsp.enable("pyright", {
       settings = {
         python = {
           pythonPath = vim.fn.exepath("python3"),
         },
       },
-    }
+    })
   end
 }
