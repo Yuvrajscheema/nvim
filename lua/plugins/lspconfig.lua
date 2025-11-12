@@ -4,7 +4,7 @@ return {
   config = function()
 
     -- Clangd Setup
-    vim.lsp.enable('clang',  {
+    vim.lsp.enable('clangd',  {
       cmd = {
         "clangd",
         "--background-index",
