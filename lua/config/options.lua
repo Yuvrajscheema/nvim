@@ -2,6 +2,7 @@ local opt = vim.opt
 
 vim.g.lazyvim_python_lsp = "pyright"
 vim.g.lazyvim_python_ruff = "ruff"
+vim.g.rust_recommended_style = 0
 
 opt.relativenumber = true
 opt.number = true

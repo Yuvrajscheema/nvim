@@ -13,7 +13,9 @@ return {
           markdown = { { "prettierd", "prettier", stop_after_first = true } },
           html = { "htmlbeautifier" },
           bash = { "beautysh" },
-          rust = { "rustfmt" },
+          rust = {
+          "rustfmt",
+        },
           yaml = { "yamlfix" },
           toml = { "taplo" },
           css = { { "prettierd", "prettier", stop_after_first = true } },
