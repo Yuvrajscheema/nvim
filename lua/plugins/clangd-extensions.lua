@@ -7,7 +7,6 @@ return {
       inline = false,
     },
     ast = {
-      --These require codicons (https://github.com/microsoft/vscode-codicons)
       role_icons = {
         type = "",
         declaration = "",
