@@ -45,12 +45,14 @@ return {
       settings = {
         ['rust-analyzer'] = {
           diagnostics = {
-            enable = false,
+            enable = true,
           }
         }
       }
     }
     )
+
+    vim.lsp.enable('zls')
 
     vim.lsp.enable('asm_lsp', {
     })

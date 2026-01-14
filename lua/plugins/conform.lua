@@ -18,7 +18,8 @@ return {
         toml = { "taplo" },
         css = { { "prettierd", "prettier", stop_after_first = true } },
         sh = { "shellcheck" },
-        python = { "black" }
+        python = { "black" },
+        zig = { "zigfmt" }
       },
     })
 

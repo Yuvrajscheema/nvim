@@ -47,7 +47,8 @@ return {
         "rst",
         "rust",
         "python",
-        "asm"
+        "asm",
+        "zig"
       },
       incremental_selection = {
         enable = true,
