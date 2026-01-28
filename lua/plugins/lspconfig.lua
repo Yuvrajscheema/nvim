@@ -57,6 +57,8 @@ return {
     vim.lsp.enable('asm_lsp', {
     })
 
+    vim.lsp.enable('vhdl_ls')
+
 
 
      vim.lsp.enable('ts_ls', {
