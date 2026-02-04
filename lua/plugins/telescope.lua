@@ -26,12 +26,12 @@ return {
     telescope.load_extension("fzf")
 
     -- set keymaps
-    local keymap = vim.keymap -- for conciseness
+    local keymap = vim.keymap
 
     keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
     keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
     keymap.set('n', '<leader>fb', "<cmd>Telescope buffers<cr>", { desc = 'Telescope buffers' })
     keymap.set('n', '<leader>fh', "<cmd>Telescope help_tags<cr>", { desc = 'Telescope help tags' })
-    keymap.set('n', "<leader>ft", "<cmd>TodoTelescope<cr>", {})
+    keymap.set('n', "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = 'Telescope todo-comments'})
   end,
 }

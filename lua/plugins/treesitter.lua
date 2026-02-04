@@ -41,6 +41,7 @@ return {
         "vimdoc",
         "c",
         "cpp",
+        "cmake",
         "make",
         "latex",
         "ninja",
