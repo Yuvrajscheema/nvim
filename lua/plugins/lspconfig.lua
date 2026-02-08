@@ -93,7 +93,7 @@ return {
       },
     })
 
-      vim.lsp.enable('tinymist')
+    vim.lsp.enable('tinymist')
 
 
     -- Lua LS Setup
@@ -119,6 +119,16 @@ return {
         Lua = {}
       },
     })
+
+    vim.lsp.config.qmlls = {
+      cmd = { "qmlls6" }, -- adjust if needed
+      filetypes = { "qml", "qmljs" },
+      root_markers = { ".git" },
+    }
+
+    vim.lsp.enable("qmlls")
+
+
 
     vim.lsp.enable("pyright", {
       settings = {
