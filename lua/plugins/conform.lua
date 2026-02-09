@@ -7,20 +7,22 @@ return {
     conform.setup({
       formatters_by_ft = {
         lua = { "stylua" },
-        typescript = { { "prettierd", "prettier", stop_after_first = true } },
-        json = { { "prettierd", "prettier", stop_after_first = true } },
+        typescript = { "prettierd", "prettier"},
+        json = {  "prettierd", "prettier" },
         java = { "google-java-format" },
-        markdown = { { "prettierd", "prettier", stop_after_first = true } },
+        markdown = { "prettierd", "prettier"},
         html = { "htmlbeautifier" },
         bash = { "beautysh" },
         rust = { "rustfmt", },
         yaml = { "yamlfix" },
         toml = { "taplo" },
-        css = { { "prettierd", "prettier", stop_after_first = true } },
+        css = { "prettierd", "prettier"},
         sh = { "shellcheck" },
         python = { "black" },
-        zig = { "zigfmt" }
+        zig = { "zigfmt" },
+        vhdl = { "ghdl" }
       },
+      stop_after_first = true
     })
 
     vim.keymap.set({ "n", "v" }, "<leader>lf", function()

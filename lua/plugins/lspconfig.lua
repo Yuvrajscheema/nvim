@@ -57,7 +57,9 @@ return {
     vim.lsp.enable('asm_lsp', {
     })
 
-    vim.lsp.enable('vhdl_ls')
+    vim.lsp.enable('vhdl_ls', {
+      cmd = {"/home/yuvy/.cargo/bin/vhdl_ls"},
+    })
 
 
 
