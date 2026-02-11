@@ -6,18 +6,10 @@ return {
 
     conform.setup({
       formatters_by_ft = {
-        lua = { "stylua" },
-        typescript = { "prettierd", "prettier"},
-        json = {  "prettierd", "prettier" },
-        java = { "google-java-format" },
-        markdown = { "prettierd", "prettier"},
-        html = { "htmlbeautifier" },
         bash = { "beautysh" },
         rust = { "rustfmt", },
         yaml = { "yamlfix" },
         toml = { "taplo" },
-        css = { "prettierd", "prettier"},
-        sh = { "shellcheck" },
         python = { "black" },
         zig = { "zigfmt" },
         vhdl = { "ghdl" }

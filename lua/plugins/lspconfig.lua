@@ -61,6 +61,8 @@ return {
       cmd = {"/home/yuvy/.cargo/bin/vhdl_ls"},
     })
 
+    vim.lsp.enable('taplo')
+
 
 
      vim.lsp.enable('ts_ls', {
