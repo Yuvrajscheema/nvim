@@ -16,7 +16,7 @@ return {
       kotlin = { "ktlint" },
       terraform = { "tflint" },
       markdown = { "vale" },
-      asm = { "arm64_clang" },
+      rust = { "clippy" },
     }
 
     local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
