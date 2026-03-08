@@ -20,7 +20,8 @@ set("n", "<leader>Y", "\"+Y")
 set("n", "<leader>d", "\"_d")
 set("v", "<leader>d", "\"_d")
 
-set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+set("n", "<leader>sf", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+set("n", "<leader>sl", [[:s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 set("n", "<leader>x", "<cmd>!chmod +x %<CR>", {silent = true})
 
 set("n", "<leader>u", ":UndotreeToggle<CR>")
