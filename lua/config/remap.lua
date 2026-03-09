@@ -31,4 +31,5 @@ set("n", "<leader>li", ":lua vim.diagnostic.open_float()<CR>")
 set("n", "<leader>cg", ":setlocal spell spelllang=en_ca<CR>")
 set("n", "<leader>lx", "<cmd>lua vim.lsp.buf.code_action()<CR>")
 
-
+set("n", "<leader>jb", "<cmd>!just build<CR>")
+set("n", "<leader>jf", "<cmd>!just flash<CR>")

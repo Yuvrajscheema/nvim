@@ -12,7 +12,7 @@ return {
         toml = { "taplo" },
         python = { "black" },
         zig = { "zigfmt" },
-        vhdl = { "ghdl" }
+        asm = { "asmfmt"}
       },
       stop_after_first = true
     })
