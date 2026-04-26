@@ -33,3 +33,5 @@ set("n", "<leader>lx", "<cmd>lua vim.lsp.buf.code_action()<CR>")
 
 set("n", "<leader>jb", "<cmd>!just build<CR>")
 set("n", "<leader>jf", "<cmd>!just flash<CR>")
+set("n", "<leader>jc", "<cmd>!just clean<CR>")
+set("n", "<leader>cg", ":setlocal spell spelllang=en_ca<CR>")
