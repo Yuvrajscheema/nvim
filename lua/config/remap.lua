@@ -28,9 +28,9 @@ set("n", "<leader>u", ":UndotreeToggle<CR>")
 
 set("n", "<leader>ls", ":LspStop<CR>")
 set("n", "<leader>li", ":lua vim.diagnostic.open_float()<CR>")
-set("n", "gd", ":lua vim.lsp.buf.definition()<CR>")
-set("n", "gD", ":lua vim.lsp.buf.declaration()<CR>")
-set("n", "<leader>grx", ":lua vim.lsp.codelens.enable(not vim.lsp.codelens.is_enabled())")
+set("n", "gd", vim.lsp.buf.definition)
+set("n", "gD", vim.lsp.buf.declaration)
+set("n", "<leader>grx", "lua vim.lsp.codelens.enable(not vim.lsp.codelens.is_enabled())<CR>")
 
 set("n", "<leader>jb", "<cmd>!just build<CR>")
 set("n", "<leader>jf", "<cmd>!just flash<CR>")
