@@ -28,10 +28,12 @@ set("n", "<leader>u", ":UndotreeToggle<CR>")
 
 set("n", "<leader>ls", ":LspStop<CR>")
 set("n", "<leader>li", ":lua vim.diagnostic.open_float()<CR>")
-set("n", "<leader>cg", ":setlocal spell spelllang=en_ca<CR>")
-set("n", "<leader>lx", "<cmd>lua vim.lsp.buf.code_action()<CR>")
+set("n", "gd", ":lua vim.lsp.buf.definition()<CR>")
+set("n", "gD", ":lua vim.lsp.buf.declaration()<CR>")
+set("n", "<leader>grx", ":lua vim.lsp.codelens.enable(not vim.lsp.codelens.is_enabled())")
 
 set("n", "<leader>jb", "<cmd>!just build<CR>")
 set("n", "<leader>jf", "<cmd>!just flash<CR>")
 set("n", "<leader>jc", "<cmd>!just clean<CR>")
 set("n", "<leader>cg", ":setlocal spell spelllang=en_ca<CR>")
+
