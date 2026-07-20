@@ -37,7 +37,8 @@ return {
       "python",
       "asm",
       "zig",
-      "vhdl"
+      "vhdl",
+      "odin"
     }
     treesitter.install(parsers)
 

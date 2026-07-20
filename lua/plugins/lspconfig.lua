@@ -54,6 +54,10 @@ return {
 
     vim.lsp.enable('zls')
 
+    vim.lsp.enable('ols')
+
+
+
     vim.lsp.enable('asm_lsp', {
     })
 
